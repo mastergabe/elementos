@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino de Cleiton - Zona de Dor</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+  color: #eee;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+.main-header {
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 3px solid #e63946;
+}
+
+.main-header h1 {
+  font-size: 3rem;
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.main-header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Seção de treino */
+.treino-section h2 {
+  font-size: 2rem;
+  color: #f4a261;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.treino-descricao {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+/* Ficha de treino */
+.treino-ficha {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #1f1f1f;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  flex-wrap: wrap;
+}
+
+.treino-ficha h3 {
+  color: #e63946;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.treino-imagem {
+  width: 200px; /* Largura fixa */
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.treino-conteudo {
+  flex: 1;
+  margin-right: 20px; /* Adiciona espaço à direita do conteúdo */
+}
+
+.exercicios {
+  list-style: disc;
+  padding-left: 20px;
+  color: #ccc;
+}
+
+.exercicios li {
+  margin-bottom: 10px;
+}
+
+/* Botão voltar */
+.voltar {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-treinos {
+  background-color: #43aa8b;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-treinos:hover {
+  background-color: #379177;
+  transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+  color: #bbb;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .main-header h1 {
+    font-size: 2rem;
+  }
+
+  .treino-ficha h3 {
+    font-size: 1.3rem;
+  }
+
+  .btn-treinos {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .treino-ficha {
+    flex-direction: column;
+  }
+
+  .treino-imagem {
+  width: 200px; /* Tamanho fixo da imagem */
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-left: 20px; /* Adiciona espaço entre imagem e conteúdo */
+}
+
+}
+
+/* Específico para a seção de costas e triceps */
+.treino-ficha.costas-triceps {
+  flex-direction: row; /* Imagem à esquerda */
+}
+
+.treino-ficha.peito-biceps {
+  flex-direction: row; /* Faz com que a imagem vá para a direita */
+}
+/* Específico para a seção Full Body */
+.treino-ficha.full-body {
+  display: flex;  /* Garantir que seja flexível */
+  flex-direction: row;  /* Coloca a imagem à direita */
+  align-items: center;  /* Alinha a imagem e o conteúdo verticalmente */
+}
+
+
+  </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>Zona de Dor</h1>
+            <p>Superando Limites, Um Treino de Cada Vez</p>
+        </div>
+    </header>
+
+    <section class="treino-section">
+        <div class="container">
+            <h2>Treino de Cleiton</h2>
+            <p class="treino-descricao">Este é o treino de Cleiton, O Cleiton tem a raça necessária para treinar, não importa o quanto seja difícil, ele vai até o limite, até arrancar sangue se necessário.</p>
+
+<div class="treino-ficha">
+  <h3>Treino de Perna</h3>
+  
+  <div class="treino-conteudo">
+    <ul class="exercicios">
+      <li>Hack Machine: 5 séries de 12 repetições</li>
+      <li>Panturrilha: 7 séries de 15 repetições</li>
+      <li>Mesa Flexora: 5 séries de 12 repetições</li>
+      <li>Levantamento Terra: 10 séries de 3 repetições</li>
+      <li>Cadeira Flexora: 7 séries de 15 repetições</li>
+    </ul>
+  </div>
+
+  <img src="img/ronniep.jpeg" alt="Tom Platz" class="treino-imagem">
+</div>
+
+</div>
+
+<div class="treino-ficha costas-triceps">
+  <h3>Treino Peito e Triceps</h3>
+  <div class="treino-conteudo">
+    <div class="treino-texto">
+      <ul class="exercicios">
+        <li>Supino Inclinado: 5 séries de 12 repetições</li>
+        <li>Supino Reto: 5 séries de 10 repetições</li>
+        <li>Voador: 6 séries de 12 repetições</li>
+        <li>Triceps Testa (Polia): 6 séries de 12 repetições</li>
+        <li>Triceps Francês (Polia): 6 séries de 12 repetições</li>
+        <li>Triceps Polia: 6 séries de 12 repetições</li>
+      </ul>
+    </div>
+  </div>
+  <img src="img/arno.jpeg" alt="Dorian Yates" class="treino-imagem">
+</div>
+</div>
+
+<div class="treino-ficha peito-biceps">
+  <h3>Treino de Costas e Biceps</h3>
+  <div class="treino-conteudo">
+    <ul class="exercicios">
+      <li>Puxado Neutra (Alta): 6 séries de 15 repetições</li>
+      <li>Puxado Supinada: 5 séries de 12 repetições</li>
+      <li>Puxado Triângulo Alto: 5 séries de 10 repetições</li>
+      <li>Puxado Triângulo Baixo: 5 séries de 10 repetições</li>
+      <li>Remada Unilateral (Halteres): 4 séries de 12 repetições</li>
+      <li>Rosca Martelo: 6 séries de 12 repetições</li>
+      <li>Rosca Banco(45°): 5 séries de 10 a 12 repetições</li>
+      <li>Rosca Scott: 5 séries de 10 a 12 repetições</li>
+    </ul>
+  </div>
+  <img src="img/arnord.jpeg" alt="Arnold Schwarzenegger" class="treino-imagem">
+</div>
+
+</div>
+
+<div class="treino-ficha full-body">
+  <h3>Ombro</h3>
+  <div class="treino-conteudo">
+    <div class="treino-texto">
+      <ul class="exercicios">
+        <li>Elevação Lateral: 5 séries de 10 a 12 repetições</li>
+        <li>Elevação Frontal: 5 séries de 10 a 12 repetições</li>
+        <li>Desenvolvimento No Banco(Halteres): 5 séries de 10 a 12 repetições</li>
+      </ul>
+    </div>
+  </div>
+  <img src="img/phil.jpeg" alt="Full Body" class="treino-imagem">
+</div>
+
+<div class="treino-ficha full-body">
+  <h3>Força</h3>
+  <div class="treino-conteudo">
+    <div class="treino-texto">
+      <ul class="exercicios">
+        <li>Agachamento Livre: 6 séries de 3 a 5 repetições</li>
+        <li>Levantamento Terra: 6 séries de 3 a 5 repetições</li>
+        <li>Supino Reto: 6 séries de 3 a 6 repetições</li>
+      </ul>
+    </div>
+  </div>
+  <img src="img/bitelo.jpeg" alt="Full Body" class="treino-imagem">
+</div>
+</div>
+
+
+            <div class="voltar">
+                <a href="treinos.html" class="btn-treinos">Voltar para Treinos</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Zona de Dor - Criado por nós para os fortes</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

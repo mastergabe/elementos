@@ -1,0 +1,299 @@
+/* Estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+  color: #eee;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+header.main-header {
+  background: #000;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 3px solid #e63946;
+}
+
+header.main-header h1 {
+  font-size: 2.5rem;
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+header.main-header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.about-group {
+  background: #1a1a1a;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-group h2 {
+  font-size: 2rem;
+  color: #f4a261;
+  margin-bottom: 20px;
+}
+
+.about-group p {
+  max-width: 800px;
+  margin: auto;
+  color: #ccc;
+}
+
+.about-group blockquote {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #e63946;
+  font-weight: bold;
+}
+
+.team-section {
+  padding: 60px 20px;
+  background: #111;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  color: #43aa8b;
+  margin-bottom: 40px;
+}
+
+.team-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.team-member {
+  background: #1f1f1f;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  color: #f4a261;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+  .team-cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .team-member {
+    width: 30%;
+  }
+}
+
+/* Botão Ver Treinos */
+.ver-treinos {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #111;
+}
+
+.btn-treinos {
+  background-color: #43aa8b;
+  color: #fff;
+  padding: 16px 32px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.btn-treinos:hover {
+  background-color: #379177;
+  transform: scale(1.05);
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  header.main-header h1 {
+    font-size: 2rem;
+  }
+
+  header.main-header p {
+    font-size: 1rem;
+  }
+
+  .btn-treinos {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  .team-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .team-member {
+    width: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+  color: #eee;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.main-header {
+  background-color: #1e1e1e;
+  color: #e63946;
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 3px solid #e63946;
+}
+
+.main-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.main-header p {
+  font-size: 1.5rem;
+}
+
+.treinos {
+  background: #222;
+  padding: 60px 20px;
+  text-align: center;
+  color: #ccc;
+}
+
+.treinos h2 {
+  font-size: 2.5rem;
+  color: #f4a261;
+  margin-bottom: 20px;
+}
+
+.treinos p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.treino-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.btn-treinos {
+  background-color: #e63946;
+  color: #fff;
+  padding: 16px 32px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  max-width: 350px;
+  margin: 10px 0;
+}
+
+.btn-treinos:hover {
+  background-color: #d63031;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+  color: #bbb;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsivo para celular */
+@media (max-width: 768px) {
+  .main-header h1 {
+    font-size: 2rem;
+  }
+
+  .treinos h2 {
+    font-size: 2rem;
+  }
+
+  .btn-treinos {
+    font-size: 1.1rem;
+    padding: 12px 24px;
+  }
+}
+  .voltar {
+    font-size: 1.1rem;
+    padding: 12px 24px;
+  }
+
+  .voltar:hover {
+  background-color: #d63031;
+  transform: scale(1.05);
+}
+.voltar {
+  background-color: #b30000;
+  color: #fff;
+  padding: 16px 32px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  max-width: 350px;
+  margin: 10px 0;
+}

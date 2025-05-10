@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino de Gabriel - Zona de Dor</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+  color: #eee;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+.main-header {
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 3px solid #e63946;
+}
+
+.main-header h1 {
+  font-size: 3rem;
+  color: #e63946;
+  margin-bottom: 10px;
+}
+
+.main-header p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Seção de treino */
+.treino-section h2 {
+  font-size: 2rem;
+  color: #f4a261;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.treino-descricao {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+/* Ficha de treino */
+.treino-ficha {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #1f1f1f;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  flex-wrap: wrap;
+}
+
+.treino-ficha h3 {
+  color: #e63946;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.treino-imagem {
+  width: 200px; /* Largura fixa */
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.treino-conteudo {
+  flex: 1;
+  margin-right: 20px; /* Adiciona espaço à direita do conteúdo */
+}
+
+.exercicios {
+  list-style: disc;
+  padding-left: 20px;
+  color: #ccc;
+}
+
+.exercicios li {
+  margin-bottom: 10px;
+}
+
+/* Botão voltar */
+.voltar {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-treinos {
+  background-color: #43aa8b;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-treinos:hover {
+  background-color: #379177;
+  transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+  color: #bbb;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .main-header h1 {
+    font-size: 2rem;
+  }
+
+  .treino-ficha h3 {
+    font-size: 1.3rem;
+  }
+
+  .btn-treinos {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .treino-ficha {
+    flex-direction: column;
+  }
+
+  .treino-imagem {
+  width: 200px; /* Tamanho fixo da imagem */
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-left: 20px; /* Adiciona espaço entre imagem e conteúdo */
+}
+
+}
+
+/* Específico para a seção de costas e triceps */
+.treino-ficha.costas-triceps {
+  flex-direction: row; /* Imagem à esquerda */
+}
+
+.treino-ficha.peito-biceps {
+  flex-direction: row; /* Faz com que a imagem vá para a direita */
+}
+/* Específico para a seção Full Body */
+.treino-ficha.full-body {
+  display: flex;  /* Garantir que seja flexível */
+  flex-direction: row;  /* Coloca a imagem à direita */
+  align-items: center;  /* Alinha a imagem e o conteúdo verticalmente */
+}
+
+
+  </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>Zona de Dor</h1>
+            <p>Superando Limites, Um Treino de Cada Vez</p>
+        </div>
+    </header>
+
+    <section class="treino-section">
+        <div class="container">
+            <h2>Treino de Gabriel</h2>
+            <p class="treino-descricao">Este é o treino de Gabriel, o cérebro do grupo. Desafie-se a atingir o seu máximo com um treino de alta intensidade e foco total.</p>
+
+<div class="treino-ficha">
+  <h3>Treino de Perna</h3>
+  
+  <div class="treino-conteudo">
+    <ul class="exercicios">
+      <li>Agachamento Livre: 7 séries de 10 a 24 repetições</li>
+      <li>Hack Machine: 6 séries de 8 a 15 repetições</li>
+      <li>Cadeira Extensora: 7 séries de 8 a 15 repetições</li>
+      <li>Extensão de Pernas: 6 séries de 8 a 15 repetições</li>
+    </ul>
+  </div>
+
+  <img src="img/tomplatz.jpeg" alt="Tom Platz" class="treino-imagem">
+</div>
+
+</div>
+
+<div class="treino-ficha costas-triceps">
+  <h3>Treino de Costas e Triceps</h3>
+  <div class="treino-conteudo">
+    <div class="treino-texto">
+      <ul class="exercicios">
+        <li>Barra Fixa Supinada: 3 séries de Até a Falha repetições</li>
+        <li>Pulldown Com Pegada Aberta: 2 séries de Até a Falha repetições</li>
+        <li>Remada Curvada Com Barra: 2 séries de Até a Falha repetições</li>
+        <li>Remada Unilateral Com Halteres: 2 séries de Até a Falha repetições</li>
+        <li>Pull Over No Cross: 2 séries de Até a Falha repetições</li>
+        <li>Encolhimento Com Halteres Ou Barra: 2 séries de Até a Falha repetições</li>
+        <li>Tríceps Testa Com Barra: 2 séries de Até a Falha repetições</li>
+        <li>Pully Triangulo: 2 séries de Até a Falha repetições</li>
+        <li>Tríceps Na Polia Com Barra Reta: 2 séries de Até a Falha repetições</li>
+        <li>Mergulho Entre Bancos: 2 séries de Até a Falha repetições</li>
+        <li>Tríceps Francês Unilateral Com Halter: 2 séries de Até a Falha repetições</li>
+      </ul>
+    </div>
+  </div>
+  <img src="img/dorian.jpeg" alt="Dorian Yates" class="treino-imagem">
+</div>
+</div>
+
+<div class="treino-ficha peito-biceps">
+  <h3>Treino de Peito e Biceps</h3>
+  <div class="treino-conteudo">
+    <ul class="exercicios">
+      <li>Cross Over: 4 séries de 20 repetições</li>
+      <li>Supino Inclinado: 4 séries de 8 a 15 repetições</li>
+      <li>Supino Reto Barra: 3 séries de 10 a 12 repetições</li>
+      <li>Cross Over Polia Alta: 3 séries de 10 a 15 repetições</li>
+      <li>Spider Curl: 3 séries de 10 a 12 repetições</li>
+      <li>Rosca Alternada Com Halteres Sentado: 3 séries de 8 a 10 repetições</li>
+      <li>Rosca Martelo Com Corda: 3 séries de 10 a 12 repetições</li>
+      <li>Rosca Concentrada: 3 séries de 12 a 15 repetições</li>
+    </ul>
+  </div>
+  <img src="img/arno.jpeg" alt="Arnold Schwarzenegger" class="treino-imagem">
+</div>
+
+</div>
+
+<div class="treino-ficha full-body">
+  <h3>Full Body</h3>
+  <div class="treino-conteudo">
+    <div class="treino-texto">
+      <ul class="exercicios">
+        <li>Agachamento Livre: 5 séries de 6 a 12 repetições</li>
+        <li>Supino Reto com Barra: 4 séries de 8 a 15 repetições</li>
+        <li>Pulldown Com Pegada Aberta: 4 séries de 6 a 12 repetições</li>
+        <li>Desenvolvimento Maquina: 4 séries de 8 a 15 repetições</li>
+        <li>Pulley Frente: 4 séries de 10 a 15 repetições</li>
+        <li>Triceps Pulley: 3 séries de 12 a 15 repetições</li>
+        <li>Rosca Direta com Barra: 3 séries de Até a Falha repetições</li>
+        <li>Abdominal Infra Banco: 3 séries de 20 repetições</li>
+      </ul>
+    </div>
+  </div>
+  <img src="img/ronnie.jpeg" alt="Full Body" class="treino-imagem">
+</div>
+
+</div>
+
+
+            <div class="voltar">
+                <a href="treinos.html" class="btn-treinos">Voltar para Treinos</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Zona de Dor - Criado por nós para os fortes</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
